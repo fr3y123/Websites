@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Blog</title>
+
+    <Link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+    <Link rel="stylesheet" href="css related/reset.css">
+    <Link rel="stylesheet" href="css related/debug.css">
+    <style>
+
+
+    article {
+      background-color: #e6f2ff;
+      display: grid;
+
+      grid-template-columns: 1fr 0.5in [start] 7.5in [end] 0.5in 1fr;
+
+      height: 100vh;   /* height fix */
+
+      padding: 0.5in 0;
+            }
+
+    article * { grid-column: start / end;}
+
+    @media * (max-width: 8.5in) {
+      article {  grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;}
+              }
+
+
+    </style>
+  </head>
+  <body>
+
+    <!-- article-->
+    <article>
+       <p class="debug-center" style="background-color: #cce5ff;">AERICLE</p>
+    </article>
+
+    <!--article-->
+    <article>
+       <p class="debug-center" style="background-color: #cce5ff;">AERICLE</p>
+    </article>
+  </body>
+</html>
